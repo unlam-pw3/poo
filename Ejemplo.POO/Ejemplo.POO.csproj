@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ejemplo.MVC._2</RootNamespace>
-    <AssemblyName>Ejemplo.MVC.2</AssemblyName>
+    <RootNamespace>Ejemplo.POO</RootNamespace>
+    <AssemblyName>Ejemplo.POO</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -94,6 +94,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmpleadosController.cs" />
+    <Compile Include="Dominio\Entidades\Administrativo.cs" />
+    <Compile Include="Dominio\CalcularSalarioNeto.cs" />
+    <Compile Include="Dominio\Entidades\Empleado.cs" />
+    <Compile Include="Dominio\ImpuestoGanancias.cs" />
+    <Compile Include="Dominio\IAporte.cs" />
+    <Compile Include="Dominio\ICalcularSueldoBruto.cs" />
+    <Compile Include="Dominio\Entidades\Programador.cs" />
+    <Compile Include="Dominio\AportePAMI.cs" />
+    <Compile Include="Dominio\AporteJubilacion.cs" />
+    <Compile Include="Dominio\AporteObraSocial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -111,8 +122,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Empleados\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
